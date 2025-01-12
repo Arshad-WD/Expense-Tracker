@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Cards from "../../components/Cards/Cards.jsx";
 import Wallet from "../../components/Add/Wallet.jsx";
-import Expense from "../../components/Add/expense.jsx";
+import Expense from "../../components/Add/Expense.jsx";
 import BudgetProgressCard from "../../components/BudgetProgressCard/BudgetProgressBar.jsx";
 import { FaWallet } from "react-icons/fa";
 import { IoCashOutline } from "react-icons/io5";
