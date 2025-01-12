@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/Jenix.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenix Expense Tracker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const canvas = document.createElement('canvas');
+      canvas.width = 64;
+      canvas.height = 64;
+      const ctx = canvas.getContext('2d');
+    
+      // Draw a circular icon
+      ctx.beginPath();
+      ctx.arc(32, 32, 30, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fillStyle = '#ffffff';
+      ctx.fill();
+    
+      // Draw the image
+      const img = new Image();
+      img.src = '/src/assets/Jenix.jpg';
+      img.onload = () => {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(32, 32, 30, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(img, 0, 0, 64, 64);
+        ctx.restore();
+    
+        // Set as favicon
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = canvas.toDataURL();
+        document.head.appendChild(link);
+      };
+    </script>
+    
+  </body>
+</html>
