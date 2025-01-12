@@ -160,7 +160,7 @@ function Expense({ expenseEntries, onExpense }) {
                   </div>
                 </div>
                 <div className="text-lg text-red-500 ml-4 sm:ml-0 flex items-center">
-                  <span>$</span>
+                  <span>₹</span>
                   <span className="ml-1">{entry.amount.toFixed(2)}</span>
                 </div>
               </div>
@@ -168,7 +168,7 @@ function Expense({ expenseEntries, onExpense }) {
           ))}
         </ul>
         <div className="mt-4 text-white">
-          Total: ${getTotalAmount(getTodayExpenses())}
+          Total: ₹{getTotalAmount(getTodayExpenses())}
         </div>
       </div>
 
@@ -192,7 +192,7 @@ function Expense({ expenseEntries, onExpense }) {
                   </div>
                 </div>
                 <div className="text-lg text-red-500 ml-4 sm:ml-0 flex items-center">
-                  <span>$</span>
+                  <span>₹</span>
                   <span className="ml-1">{entry.amount.toFixed(2)}</span>
                 </div>
               </div>
@@ -200,7 +200,7 @@ function Expense({ expenseEntries, onExpense }) {
           ))}
         </ul>
         <div className="mt-4 text-white">
-          Total: ${getTotalAmount(getThisWeekExpenses())}
+          Total: ₹{getTotalAmount(getThisWeekExpenses())}
         </div>
       </div>
 
