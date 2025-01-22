@@ -38,7 +38,7 @@ function Footer() {
 
         {/* GitHub */}
         <a
-          href="https://www.github.com"
+          href="https://github.com/Arshad-WD"
           target="_blank"
           rel="noopener noreferrer"
           className="transform hover:scale-125 transition-all duration-300"
@@ -50,7 +50,7 @@ function Footer() {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com"
+          href="www.linkedin.com/in/arshad-chaudhary-388312288"
           target="_blank"
           rel="noopener noreferrer"
           className="transform hover:scale-125 transition-all duration-300"
