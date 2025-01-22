@@ -18,7 +18,7 @@ const BudgetProgressCard = ({ remainingAmount }) => {
     }, [remainingAmount]);
 
     return (
-        <div className="flex flex-col sm:flex-row my-0 sm:my-6 mx-0 sm:mx-auto w-[98%] sm:w-[84%] md:w-[67%] lg:w-[85%] xl:w-[80%] min-h-[32vh] sm:min-h-[40vh] lg:min-h-[40vh] text-white rounded-3xl shadow-lg">
+        <div className="flex flex-col sm:flex-row md:flex-row my-0 sm:my-6 mx-0 sm:mx-auto w-[98%] sm:w-[94%] md:w-[95%] lg:w-[85%] xl:w-[80%] min-h-[32vh] sm:min-h-[40vh] lg:min-h-[40vh] text-white rounded-3xl shadow-lg">
             <div className="flex flex-col justify-between p-4 sm:w-[60%] bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 rounded-tl-3xl rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl ml-[0.5%]">
                 <div>
                     <h3 className="text-md sm:text-base font-semibold text-gray-300 mb-2">

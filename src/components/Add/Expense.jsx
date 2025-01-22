@@ -102,7 +102,7 @@ function Expense({ expenseEntries, onExpense }) {
       {/* Expense Input Section */}
       <div className="p-6 mx-auto shadow-md rounded-lg mt-4 max-w-4xl">
         <h2 className="text-lg font-semibold text-white">Add Expense</h2>
-        <div className="flex flex-col sm:flex-row sm:items-center mt-4">
+        <div className="flex flex-col md:flex-row lg:flex-row sm:items-center mt-4 space-y-4 md:space-y-0 lg:space-y-0">
           <input
             type="number"
             placeholder="Enter amount"

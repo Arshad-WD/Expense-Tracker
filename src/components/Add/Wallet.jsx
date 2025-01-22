@@ -78,13 +78,13 @@ function Wallet({ walletEntries = [], setWalletEntries }) {
       {/* Wallet Input Section */}
       <div className="p-6 mx-auto shadow-md rounded-lg mt-4 max-w-4xl">
         <h2 className="text-lg font-semibold text-white">Add Wallet</h2>
-        <div className="flex flex-col sm:flex-row sm:items-center mt-4">
+        <div className="flex flex-col md:flex-row lg:flex-row  sm:items-center mt-4 space-y-4 md:space-y-0 lg:space-y-0">
           <input
             type="number"
             placeholder="Enter amount"
             value={walletInput}
             onChange={(e) => setWalletInput(e.target.value)}
-            className="border border-gray-300 rounded-md p-3 w-full sm:w-4/5 mr-4 focus:outline-indigo-500"
+            className="border border-gray-300 rounded-md p-3 w-full sm:w-4/5  mr-4 focus:outline-indigo-500"
           />
           <input
             type="text"

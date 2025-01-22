@@ -9,14 +9,14 @@ const Sidebar = () => {
     const DesktopMenus = [
         { title: 'Home', icon: <FaHome />, path: '/' },
         { title: 'Transactions', icon: <FaWallet />, path: '/transactions' },
-        { title: 'Notifications', icon: <FaBell />, path: '/notifications' },
+        //{ title: 'Notifications', icon: <FaBell />, path: '/notifications' },
         { title: 'Settings', icon: <FaCog />, path: '/settings' },
     ];
 
     const MobileMenus = [
         { title: 'Home', icon: <FaHome />, path: '/' },
         { title: 'Transactions', icon: <FaWallet />, path: '/transactions' },
-        { title: 'Notifications', icon: <FaBell />, path: '/notifications' },
+      //  { title: 'Notifications', icon: <FaBell />, path: '/notifications' },
         { title: 'Settings', icon: <FaCog />, path: '/settings' },
     ];
 

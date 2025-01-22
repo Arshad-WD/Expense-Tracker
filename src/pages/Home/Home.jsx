@@ -63,8 +63,8 @@ const Home = () => {
 
   return (
     <div className="flex h-screen bg-black">
-      <div className="flex-1 pl-4 pt-4 snap-y">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+      <div className="flex-1 pl-4 pt-4 snap-y sm:pl-2">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-0 ">
           <Cards WalletEntries={walletEntries} />
           <BudgetProgressCard remainingAmount={remainingAmount} />
         </div>
